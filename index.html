@@ -4,10 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript education</title>
+  <script>
+    let on = false;
+
+    function toggleTV(e) {
+      e.style.background = on ? "black" : "red";
+      on = !on;
+    }
+
+    function toggleBlock(show) {
+      let elem = document.getElementById('orangeBlock');
+      elem.style.display = show ? "block" : "none";
+    }
+  </script>
+  <style>
+    .tv,
+    .tv div {
+      background: rgb(189, 24, 24);
+      border: 1px solid #fff;
+      width: 100px;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+    .tv {width: 200px; height: 200px; display: flex; margin: 0 auto; background: black;}
+    .test {width: 300px; height: 300px; display: none; margin: 0 -150px 0; background: orange; position: absolute; top: 10px; left: 50%;}
+    .test span {float: right; margin: 10px; color: #000; font-weight: bold;}
+  </style>
 </head>
 <body>
   <p>Hello World!!!</p>
-  <script src="js/script_project.js"></script>
+  <div class="tv" onclick="toggleBlock(true)">
+    <div class"tv_sm" onclick="toggleTV(this)"></div>
+  </div>
+  <div class="test" id="orangeBlock"><a href="#" title=""><span onclick="toggleBlock(false)">X</span></a></div>
+  <!-- <script src="js/script_project.js"></script> -->
   <script src="js/script.js"></script>
 </body>
 </html>
