@@ -189,8 +189,8 @@
 
 // let num;
 // do {
-//   num = prompt("ввести число, большее 100", "");
-// } while (num < 100 && num !== null);
+//   num = prompt("ввести число, большее 100", "0");
+// } while (num <= 100 && num != null);
 
 // let n = 10;
 
@@ -201,3 +201,226 @@
 //   console.log( i );
 // }
 
+// function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   } else {
+//     return confirm('А родители разрешили?');
+//   }
+// }
+
+// let age = prompt('Сколько вам лет?', 18);
+
+// if ( checkAge(age) ) {
+//   alert( 'Доступ получен' );
+// } else {
+//   alert( 'Доступ закрыт' );
+// }
+
+// let num = 12.567;
+
+// console.log(Math.floor(num));
+// console.log(Math.ceil(num));
+// console.log(Math.round(num));
+// console.log(Math.trunc(num));
+// console.log(num.toFixed(2));
+// console.log(num.toString(16));
+// console.log((0.28 * 100 + 0.14 * 100) / 100);
+// console.log(4e6);
+// console.log(5e-6);
+// console.log(isFinite("str"));
+// console.log(parseInt("45kj"));
+// console.log(parseInt("jh767kj"));
+// console.log(parseFloat("6.7sthss"));
+// console.log(parseFloat("wer5.6"));
+// console.log(Math.random());
+// console.log(Math.max(78, 4, -5, 67));
+// console.log(Math.min(78, 4, -5, 67));
+// console.log(Math.pow(4, 5));
+// console.log("Math.max(78, 4,\n -5, 67)".length);
+
+// let str = "Letter for my friend!";
+
+// console.log(str[7]);
+// console.log(str[100]);
+// console.log(str.charAt(100));
+// console.log(str.length);
+// console.log(str[str.length - 1]);
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+// console.log(str[14].toUpperCase());
+// console.log(str.indexOf("f"));
+// console.log(str.indexOf("f", 8));
+// console.log(str.includes("f", 15));
+// console.log(str.startsWith("L"));
+// console.log(str.endsWith("!"));
+
+// let str = "stringify";
+// console.log(str.slice(0, 5));
+// console.log(str.slice(5));
+// console.log(str.slice(-4, -1));
+// console.log(str.substring(5, 0));
+// console.log(str.substring(5));
+// console.log(str.substr(0, 3));
+// console.log(str.substr(5));
+// console.log(str.codePointAt(5));
+// console.log(String.fromCodePoint(80));
+// console.log("Tfheywkr".localeCompare("Kjriehru4"));
+
+// for (let char of "Hello") {
+//   console.log(char);
+// }
+
+// let str = 'Hi';
+// str = 'h' + str[1]; // заменяем строку
+// console.log(str); // hi
+
+// let age = prompt("Введите свой возраст", "");
+
+// function checkAge(age) {
+//   return (age > 18) ? true : confirm('Родители разрешили?');
+// }
+
+// checkAge(age);
+
+// function min(a, b) {
+//   return a < b ? a : b;
+// }
+// console.log(min(2, 5));
+// console.log(min(3, -1));
+// console.log(min(1, 1));
+
+// function pow(x, n) {
+//   let result = x;
+//   for (let i = 1; i < n; i++) {
+//     result *= x;
+//   }
+//   return result;
+// }
+// let x,
+//     n;
+// do {
+//   x = +prompt("Введите целое число x", "");
+//   n = +prompt("Введите целое число n", "");
+// } while (n < 1);
+    
+// console.log(pow(x, n));
+
+// let num1 = +prompt("Введите число1", ""),
+//     num2 = +prompt("Введите число2", "");
+
+// console.log(num1 + num2);
+
+// console.log(1.35.toFixed(1));
+// console.log(6.35.toFixed(1));
+// console.log(Math.round(6.35 * 10) / 10);
+
+// function readNumber() {
+//   let num;
+
+//   do {
+//     num = +prompt("Введите число", 0);
+//   } while ( !isFinite(num) );
+
+//   if (num === null || num === '') return null;
+
+//   return num;
+// }
+
+// console.log(`Число: ${readNumber()}`);
+
+// function random(min, max) {
+//   return min + Math.random() * (max - min);
+// }
+// console.log(random(1, 5));
+// console.log(random(1, 5));
+// console.log(random(1, 5));
+
+// function randomInteger(min, max) {
+//   let result = min - 0.5 + Math.random() * (max - min + 1);
+//   return Math.round(result);
+// }
+// console.log(randomInteger(1, 5));
+// console.log(randomInteger(1, 5));
+// console.log(randomInteger(1, 5));
+
+// for (let char of "Hello") {
+//   console.log(char);
+// }
+
+// function ucFirst(str) {
+//   if (!str) return str;
+//   return str[0].toUpperCase() + str.slice(1);
+// }
+// console.log(ucFirst("qwerty"));
+
+// function ucFirst(str) {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// }
+// console.log(ucFirst("test"));
+
+// function checkSpam(str) {
+//   let lowerStr = str.toLowerCase();
+//   return lowerStr.includes("viagra") || str.includes("xxx");
+// } 
+// console.log(checkSpam('buy ViAgRA now'));
+// console.log(checkSpam('free xxxxx'));
+// console.log(checkSpam("innocent rabbit"));
+
+// function truncate(str, maxlength) {
+//   return str.length < maxlength ? str : str.slice(0, maxlength - 1) + "…";
+// }
+
+// console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20));
+// console.log(truncate("Всем привет!", 20));
+// console.log(truncate("", 0));
+
+// function extractCurrencyValue(str) {
+//   return +str.slice(1);
+// }
+// console.log(extractCurrencyValue('$120'));
+
+// let c = 4;
+// function addX(x) {
+//   return function(n) {
+//      return n + x;
+//   };
+// }
+// const addThree = addX(3);
+// let d = addThree(c);
+// console.log('example partial application', d);
+
+// function sayHiBye(firstName, lastName) {
+
+//   console.log("Привет, " + getFullName());
+//   console.log("Пока, " + getFullName());
+
+//   function getFullName() {
+//     return firstName + " " + lastName;
+//   }
+
+// }
+
+// sayHiBye("Вася", "Пупкин");
+
+// say('Вася');
+
+// var phrase = 'Привет';
+
+// function say(name) {
+//   console.log(name + ", " + phrase);
+// }
+
+// var value = 0;
+
+// function f() {
+//   if (1) {
+//     value = true;
+//   } else {
+//     var value = false;
+//   }
+
+//   console.log( value );
+// }
+
+// f();
